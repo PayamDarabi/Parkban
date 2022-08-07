@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ir.parkban.general.customView.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/raw_height_50"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="@string/edit_profile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16sp" />
+
+        <ir.parkban.general.customView.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="@string/fullname"
+            android:textSize="@dimen/font_size_14sp" />
+
+        <ir.parkban.general.customView.CustomEditText
+            android:id="@+id/edt_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/raw_height_50"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:layout_marginLeft="@dimen/margin_24"
+            android:layout_marginRight="@dimen/margin_24"
+            android:background="@drawable/bck_rounded_box"
+            android:gravity="right|center_vertical"
+            android:hint=""
+            android:padding="@dimen/padding_8"
+            android:textSize="@dimen/font_size_14sp" />
+
+        <ir.parkban.general.customView.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_16"
+            android:text="@string/email"
+            android:textSize="@dimen/font_size_14sp" />
+
+        <ir.parkban.general.customView.CustomEditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/raw_height_50"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:layout_marginLeft="@dimen/margin_24"
+            android:layout_marginRight="@dimen/margin_24"
+            android:background="@drawable/bck_rounded_box"
+            android:gravity="right|center_vertical"
+            android:hint=""
+            android:padding="@dimen/padding_8"
+            android:textSize="@dimen/font_size_14sp" />
+
+        <ir.parkban.general.customView.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_16"
+            android:text="@string/mellicode"
+            android:textSize="@dimen/font_size_14sp" />
+
+        <ir.parkban.general.customView.CustomEditText
+            android:id="@+id/edt_mellicode"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/raw_height_50"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:layout_marginLeft="@dimen/margin_24"
+            android:layout_marginRight="@dimen/margin_24"
+            android:background="@drawable/bck_rounded_box"
+            android:gravity="right|center_vertical"
+            android:hint=""
+            android:padding="@dimen/padding_8"
+            android:textSize="@dimen/font_size_14sp" />
+
+        <ir.parkban.general.customView.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_16"
+            android:text="@string/address"
+            android:textSize="@dimen/font_size_14sp" />
+
+        <ir.parkban.general.customView.CustomEditText
+            android:id="@+id/edt_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/raw_height_50"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:layout_marginLeft="@dimen/margin_24"
+            android:layout_marginRight="@dimen/margin_24"
+            android:background="@drawable/bck_rounded_box"
+            android:gravity="right|center_vertical"
+            android:hint=""
+            android:padding="@dimen/padding_8"
+            android:textSize="@dimen/font_size_14sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:orientation="vertical">
+
+            <ir.parkban.general.customView.CustomButtonView
+                android:id="@+id/btnsubmitProfile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/raw_height_50"
+                android:layout_marginLeft="@dimen/margin_32"
+                android:layout_marginRight="@dimen/margin_32"
+
+                android:background="@color/colorPrimary"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

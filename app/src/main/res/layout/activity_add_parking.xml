@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/app_bar"></include>
+    </android.support.design.widget.AppBarLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/linContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:id="@+id/coordinateLayout_parking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rel_parking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:minHeight="@dimen/raw_height_72"
+                    android:paddingBottom="@dimen/margin_8"
+                    android:paddingTop="@dimen/margin_8">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_16"
+                        android:gravity="right|center_vertical"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true">
+
+
+                        <ir.parkban.general.customView.CustomTextView
+                            android:id="@+id/txtUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_8"
+                            android:text="@string/username"
+                            android:textColor="#181818"
+                            android:textSize="@dimen/font_size_16sp"
+                            app:Customfont="iran_sans_bold.ttf" />
+
+                        <ir.parkban.general.customView.CustomEditText
+                            android:id="@+id/et_parkingName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="@string/parkingname"
+                            android:textColor="#181818"
+                            android:textSize="@dimen/font_size_16sp" />
+
+                        <ir.parkban.general.customView.CustomEditText
+                            android:id="@+id/et_FullAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="@string/full_address"
+                            android:textColor="#181818"
+                            android:textSize="@dimen/font_size_16sp" />
+
+                        <ir.parkban.general.customView.CustomEditText
+
+                            android:id="@+id/et_BasePrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="@string/basePrice"
+                            android:textColor="#181818"
+                            android:textSize="@dimen/font_size_16sp" />
+
+                        <ir.parkban.general.customView.CustomEditText
+
+                            android:id="@+id/et_HourlyPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="@string/hourlyPrice"
+                            android:textColor="#181818"
+                            android:textSize="@dimen/font_size_16sp" />
+
+                        <ir.parkban.general.customView.CustomEditText
+
+                            android:id="@+id/et_Description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="@string/description"
+                            android:textColor="#181818"
+                            android:textSize="@dimen/font_size_16sp" />
+
+                        <ir.parkban.general.customView.CustomEditText
+
+                            android:id="@+id/et_WorkDays"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="@string/workdays"
+                            android:textColor="#181818"
+                            android:textSize="@dimen/font_size_16sp" />
+
+                        <ir.parkban.general.customView.CustomEditText
+
+                            android:id="@+id/et_Workhours"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="@string/workhours"
+                            android:textColor="#181818"
+                            android:textSize="@dimen/font_size_16sp" />
+
+                        <com.wang.avi.AVLoadingIndicatorView
+                            android:id="@+id/prg_uploadPhoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:indicatorColor="@color/colorAccent"
+                            app:indicatorName="BallPulseIndicator" />
+
+
+                        <ImageView
+                            android:id="@+id/imgUploadphotoMain"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:padding="8dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_edit" />
+
+
+
+
+                       <!-- <HorizontalScrollView
+                            android:id="@+id/hsw_scrollImages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:padding="16dp">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:id="@+id/lay_parkings_images"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </LinearLayout>
+
+                        </HorizontalScrollView>-->
+
+                        <ir.parkingo.general.customView.CustomButtonView
+                            android:id="@+id/btn_submitParking"
+                            android:layout_width="match_parent"
+                            android:background="@color/colorAccent"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_height="match_parent"
+                            android:text="@string/submit" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </android.support.design.widget.CoordinatorLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

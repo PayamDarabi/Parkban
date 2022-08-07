@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:gravity="center"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+
+    <ir.parkban.general.customView.CustomTextView
+        android:id="@+id/txt_carFullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/def_text"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:Customfont="iran_sans_bold.ttf"
+        android:textStyle="bold" />
+
+    <ir.parkban.general.customView.CustomTextView
+        android:id="@+id/txt_plateNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/def_text"
+        app:Customfont="iran_sans_bold.ttf"
+        android:textColor="@color/black" />
+
+
+
+    <!--    <TextView
+            android:id="@+id/txt_updateDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/def_text"
+            android:textColor="@color/black" />-->
+
+
+</LinearLayout>

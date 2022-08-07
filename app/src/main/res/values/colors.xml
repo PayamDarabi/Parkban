@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#666666</color>
+    <color name="colorPrimaryDark">#333333</color>
+    <color name="colorAccent">#FFC100</color>
+
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="blue">#0288d1</color>
+    <color name="textPrimaryColor">#212121</color>
+    <color name="textSecondColor">#646464</color>
+    <color name="divider">#cacaca</color>
+    <color name="mainColor">#eeeeee</color>
+    <color name="row_file_color">#ebebeb</color>
+    <color name="row_fill_color_multi_select">#cacaca</color>
+    <color name="primum_background">#0d0d0d</color>
+    <color name="red">#c00505</color>
+    <color name="transparent_black">#94333232</color>
+    <color name="bg_gray">#ecedef</color>
+    <color name="gray">#666666</color>
+    <color name="nocolor">#00000000</color>
+
+</resources>

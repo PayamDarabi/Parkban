@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ir.parkban.general.classes.FullDrawerLayout
+    android:id="@+id/drawer"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <include layout="@layout/main_content"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/left_drawer"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="end">
+        <include layout="@layout/side_menu"/>
+    </LinearLayout>
+
+</ir.parkban.general.classes.FullDrawerLayout>
+
+
+    <!--android:background="@android:color/transparent"
+       -->

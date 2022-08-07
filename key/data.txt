@@ -1,0 +1,4 @@
+Keystore_password:parkban@$1397
+Key_alias: parkban
+Key_password:@#parkban@$
+Master_Pass: @#parkban@$

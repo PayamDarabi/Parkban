@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Parkban</string>
+    <string name="mobileNumber">شماره همراه</string>
+    <string name="login_register">ورود / ثبت نام</string>
+    <string name="password">کلمه عبور</string>
+    <string name="plz_insert_activation_code">لطفا این کد را وارد کنید :</string>
+    <string name="create_error_no_name">بایستی شماره سیم کارت خود را وارد نمایید.</string>
+    <string name="create_error_no_pass">بایستی رمز عبور خود را وارد نمایید.</string>
+    <string name="mobile_number_invalid">شماره تلفن همراه وارد شده اشتباه است.</string>
+    <string name="accept_language">fa-ir</string>
+    <string name="android">android</string>
+    <string name="retrofit_failure">خطا در برقراری ارتباط</string>
+
+    <string name="title_activity_maps">پارکینگو</string>
+    <string name="register_success">ثبت نام با موفقیت انجام شد.</string>
+    <string name="mobile">شماره موبایل</string>
+    <string name="mobilenumber">09123457896</string>
+    <string name="iran_sans_bold">iran_sans_bold.ttf</string>
+    <string name="main">صفحه اصلی</string>
+    <string name="exit">خروج</string>
+    <string name="tryAgain">تلاش مجدد</string>
+    <string name="profile">پروفایل</string>
+    <string name="username">نام کاربری</string>
+    <string name="fullname">نام کامل</string>
+    <string name="email">ایمیل</string>
+    <string name="about">درباره</string>
+    <string name="address">آدرس کامل</string>
+    <string name="mellicode">کد ملی</string>
+    <string name="telephone">تلفن ثابت</string>
+    <string name="title_activity_add_parking">AddParkingActivity</string>
+    <string name="full_address">آدرس کامل</string>
+    <string name="basePrice">قیمت پایه</string>
+    <string name="hourlyPrice">قیمت ساعتی</string>
+    <string name="description">توضیحات</string>
+    <string name="workdays">روزهای کاری</string>
+    <string name="workhours">ساعات کار</string>
+    <string name="submit">ثبت کردن</string>
+    <string name="parkingname">نام پارکینگ</string>
+    <string name="cars">خودرو</string>
+    <string name="wallet">کیف پول</string>
+    <string name="car_added_successfully">خودرو با موفقیت افزوده شد</string>
+    <string name="parking_added_successfully">پارکینگ با موفقیت افزوده شد</string>
+    <string name="carname">نام کامل خودرو</string>
+    <string name="platenumber">شماره پلاک</string>
+    <string name="creation_year">سال ساخت</string>
+    <string name="add_parking">افزودن پارکینگ</string>
+    <string name="reserve">رزرو</string>
+    <string name="parking_details">مشاهده جزئیات پارکینگ</string>
+    <string name="reserve_success">پارکینگ مورد نظر شما با موفقیت رزرو شد</string>
+
+
+    <string name="myparkings">پارکینگ های من</string>
+    <string name="credit">اعتبار</string>
+    <string name="terms">شرایط استفاده</string>
+    <string name="privacy">حریم شخصی</string>
+    <string name="select_photo">عکس مورد نظر را انتخاب کنید</string>
+    <string name="parking_Details">مشخصات پارکینگ</string>
+    <string name="ownerDetails">مشخصات مالک پارکینگ</string>
+    <string name="internet_Fail">اینترنت شما متصل نیست!</string>
+    <string name="edit_profile">ویرایش اطلاعات پروفایل</string>
+    <string name="edtprofile_success">مشخصات شما با موفقیت ویرایش شد</string>
+    <string name="submit_fail">خطایی در ثبت اطلاعات رخ داد</string>
+    <string name="parking_photoUploaded">با موفقیت اضافه شد</string>
+
+    <string name="create_error_pass_length">رمز عبور باید حداقل 5 حرف باشد.</string>
+    <string name="upload_fail">خطایی در آپلود عکس رخ داده</string>
+    <string name="car_title">عنوان خودرو</string>
+    <string name="iran">ایران</string>
+    <string name="carcolor">رنگ خودرو</string>
+    <string name="cartype">نوع خودرو</string>
+    <string name="gps_dialog_msg">آیا مایل به روشن شدن GPS خود هستید؟</string>
+    <string name="no">خیر</string>
+    <string name="yes">بله</string>
+    <string name="settings">تنظیمات</string>
+    <string name="show_parking">نمایش پارکینگ</string>
+    <string name="show_traffic">نمایش ترافیک</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="def_text">متن پیش فرض</string>
+    <string name="parkings">پارکینگ ها</string>
+    <string name="transaction">تراکنش ها</string>
+    <string name="reserves">رزرو ها</string>
+    <string name="emtpy_field">خالی</string>
+    <string name="cash">مبلغ قابل برداشت</string>
+    <string name="reserve_request">ارسال درخواست رزرو</string>
+    <string name="add_cars">افزودن خودرو</string>
+</resources>

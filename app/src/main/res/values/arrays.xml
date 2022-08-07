@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="parking_typs">
+        <item>شخصی</item>
+        <item>عمومی</item>
+
+    </string-array>
+
+    <string-array name="car_colors">
+        <item>سفید</item>
+        <item>مشکی</item>
+        <item>نقره ای</item>
+        <item>خاکستری</item>
+        <item>سفید صدفی</item>
+        <item>نوک مدادی</item>
+        <item>آبی</item>
+        <item>قهوه ای</item>
+        <item>قرمز</item>
+        <item>سرمه ای</item>
+        <item>بژ</item>
+        <item>تیتانیوم</item>
+        <item>یشمی</item>
+        <item>آلبالویی</item>
+        <item>سربی</item>
+        <item>مسی</item>
+        <item>بادمجانی</item>
+        <item>کربن بلک</item>
+        <item>زرد</item>
+        <item>ذغالی</item>
+        <item>نارنجی</item>
+        <item>نقرآبی</item>
+        <item>سبز</item>
+        <item>زیتونی</item>
+        <item>گیلاسی</item>
+        <item>دلفینی</item>
+        <item>طوسی</item>
+        <item>اطلسی</item>
+        <item>طلائی</item>
+        <item>کرم</item>
+        <item>زرشکی</item>
+        <item>برنز</item>
+        <item>بنفش</item>
+        <item>موکا</item>
+        <item>خاکی</item>
+        <item>پوست پیازی</item>
+        <item>مارون</item>
+        <item>امبر بلک</item>
+        <item>صورتی</item>
+        <item>اخرائی</item>
+        <item>شتری</item>
+    </string-array>
+
+    <string-array name="car_types">
+        <item>وانت</item>
+        <item>ون</item>
+        <item>کوپه</item>
+        <item>سواری</item>
+        <item>کروک</item>
+        <item>شاسی بلند</item>
+
+    </string-array>
+
+    <string-array name="chars">
+        <item>الف</item>
+
+        <item>ب</item>
+        <item>ت</item>
+        <item>ج</item>
+        <item>د</item>
+        <item>ر</item>
+        <item>ز</item>
+        <item>س</item>
+        <item>ص</item>
+        <item>ط</item>
+        <item>ع</item>
+        <item>ق</item>
+        <item>ل</item>
+        <item>م</item>
+        <item>ن</item>
+        <item>و</item>
+        <item>ه</item>
+        <item>ی</item>
+        <item>ویلچر</item>
+
+</string-array>
+</resources>

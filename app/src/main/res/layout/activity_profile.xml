@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/app_bar"></include>
+    </android.support.design.widget.AppBarLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/linContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:id="@+id/coordinateLayout_person"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rel_person"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+
+                    android:minHeight="@dimen/raw_height_72"
+                    android:paddingBottom="@dimen/margin_8"
+                    android:paddingTop="@dimen/margin_8">
+
+                    <ImageView
+                        android:id="@+id/img_person"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="@dimen/margin_16"
+                        android:src="@drawable/ic_ico_person" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_toLeftOf="@id/img_person"
+
+                        android:gravity="right|center_vertical"
+                        android:orientation="vertical">
+
+                        <ir.parkban.general.customView.CustomTextView
+                            android:id="@+id/txtUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:text="@string/username"
+                            android:textColor="#181818"
+                            android:textSize="@dimen/font_size_16sp"
+                            app:Customfont="iran_sans_bold.ttf" />
+
+
+                        <LinearLayout
+                            android:id="@+id/lin_user_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:orientation="vertical">
+
+                            <ir.parkban.general.customView.CustomTextView
+                                android:id="@+id/txtNameFamily"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="@string/fullname"
+                                android:textColor="#181818"
+                                android:textSize="@dimen/font_size_16sp"
+                                app:Customfont="iran_sans_bold.ttf" />
+
+                            <ir.parkban.general.customView.CustomTextView
+                                android:id="@+id/txtEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="@string/email"
+                                android:textColor="#181818"
+                                android:textSize="@dimen/font_size_16sp"
+                                app:Customfont="iran_sans_bold.ttf" />
+
+                            <ir.parkban.general.customView.CustomTextView
+                                android:id="@+id/txtAddres"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="@string/address"
+                                android:textColor="#181818"
+                                android:textSize="@dimen/font_size_16sp"
+                                app:Customfont="iran_sans_bold.ttf" />
+
+                            <ir.parkban.general.customView.CustomTextView
+                                android:id="@+id/txtMelliCode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="@string/mellicode"
+                                android:textColor="#181818"
+                                android:textSize="@dimen/font_size_16sp"
+                                app:Customfont="iran_sans_bold.ttf" />
+
+                            <ir.parkban.general.customView.CustomTextView
+                                android:id="@+id/txtfake2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text=""
+                                android:textColor="#181818"
+                                android:textSize="@dimen/font_size_16sp" />
+
+                            <ir.parkban.general.customView.CustomTextView
+                                android:id="@+id/txtfake"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text=""
+                                android:textColor="#181818"
+                                android:textSize="@dimen/font_size_16sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_edit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_16"
+                    android:src="@drawable/ic_edit"
+                    app:fabSize="normal"
+                    app:layout_anchor="@id/rel_person"
+                    android:visibility="visible"
+                    app:layout_anchorGravity="bottom|left" />
+            </android.support.design.widget.CoordinatorLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

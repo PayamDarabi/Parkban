@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1019131923031",
+    "firebase_url": "https://parkban-b0974.firebaseio.com",
+    "project_id": "parkban-b0974",
+    "storage_bucket": "parkban-b0974.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019131923031:android:c3f996d672899615",
+        "android_client_info": {
+          "package_name": "ir.parkban"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019131923031-2ru5vsuqm659b8fpqffbp10a82o2hok0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ir.parkban",
+            "certificate_hash": "6b2ecf50d3c8106319093f24b7336adea0d93579"
+          }
+        },
+        {
+          "client_id": "1019131923031-872hmc8t2pvcjnf89a3nuf786ocu4kfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSuR7wkwbt9R363D5PQ9gQypWAb_VVaNs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019131923031-872hmc8t2pvcjnf89a3nuf786ocu4kfm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

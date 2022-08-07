@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+        <include layout="@layout/app_bar"></include>
+    </android.support.design.widget.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/linContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:id="@+id/coordinateLayout_car"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rel_car"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:minHeight="@dimen/raw_height_72"
+                    android:paddingBottom="@dimen/margin_8"
+                    android:paddingTop="@dimen/margin_8">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:gravity="right|center_vertical"
+                        android:orientation="vertical">
+
+                        <ir.parkban.general.customView.CustomTextView
+                            android:id="@+id/txtUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_8"
+                            android:text="@string/username"
+                            android:textColor="#181818"
+                            android:textSize="@dimen/font_size_16sp"
+                            app:Customfont="iran_sans_bold.ttf" />
+
+                        <ir.parkban.general.customView.CustomEditText
+                            android:id="@+id/et_carname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="@string/carname"
+                            android:textColor="#181818"
+                            android:textSize="@dimen/font_size_16sp" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="118dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/pelak_melie" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ir.parkban.general.customView.CustomEditText
+                                android:id="@+id/et_plateIRNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/iran"
+                                android:textColor="#181818"
+                                android:textSize="@dimen/font_size_16sp" />
+
+                            <ir.parkban.general.customView.CustomEditText
+
+                                android:id="@+id/et_platePart1Number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:hint="12"
+                                android:textColor="#181818"
+                                android:textSize="@dimen/font_size_16sp" />
+
+
+                            <com.jaredrummler.materialspinner.MaterialSpinner
+                                android:id="@+id/chars_spinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="" />
+
+                            <ir.parkban.general.customView.CustomEditText
+
+                                android:id="@+id/et_platePart2Number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="345"
+                                android:textColor="#181818"
+                                android:textSize="@dimen/font_size_16sp" />
+                        </LinearLayout>
+
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/color_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/carcolor" />
+
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/type_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cartype" />
+
+
+                        <ir.parkban.general.customView.CustomButtonView
+                            android:id="@+id/btn_submitCar"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/bck_round_yellow"
+                            android:layout_height="match_parent"
+                            android:text="@string/submit" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

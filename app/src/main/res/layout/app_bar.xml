@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginRight="8dp"
+        android:rotationX="180"
+        app:srcCompat="@drawable/ic_ico_back" />
+
+
+    <ImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginRight="8dp"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <ir.parkban.general.customView.CustomTextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginRight="8dp"
+        android:text="@string/app_name"
+        android:maxWidth="125dp"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_24sp"
+        android:textStyle="bold"
+        app:fontFamily="@string/iran_sans_bold" />
+
+
+    <LinearLayout
+        android:id="@+id/linFakeSpace"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="start|center_vertical"
+        android:orientation="horizontal"></LinearLayout>
+
+
+    <AutoCompleteTextView
+        android:id="@+id/edtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginLeft="@dimen/margin_8"
+        android:imeOptions="actionSearch"
+        android:textColor="@color/colorAccent"
+        android:singleLine="true"
+        android:visibility="visible" />
+
+
+
+</androidx.appcompat.widget.Toolbar>
+
